@@ -9,6 +9,7 @@ header .quote{
     bottom:20px;
     right:20px;
 }
+
 .section{
     padding:2vw;
 }
@@ -65,5 +66,8 @@ header .quote{
     }
     #scroll{
         right:10px;
+    }
+    .row .border-bottom{
+        margin-bottom:30px;
     }
   }

@@ -1,0 +1,69 @@
+header{
+    min-height: 1000px;
+    background: #212121 url("photos/bg.jpg") no-repeat center;
+    background-size: cover;
+    position: relative;
+}
+header .quote{
+    position: absolute;
+    bottom:20px;
+    right:20px;
+}
+.section{
+    padding:2vw;
+}
+.tabs .indicator,.tabs .tab a:hover, .tabs .tab a.active,.tabs .indicator{
+    color: teal;
+}
+.tabs .indicator{
+    background:teal
+}
+.tabs .tab a:focus, .tabs .tab a:focus.active{
+    background: transparent;
+  }
+
+  /***********Skill Circles***************/
+  #html,#css,#javascript,#nodejs,#mongodb,#express {
+    margin: 20px auto;
+    width: 100px;
+    height: 100px;
+  }
+
+  /**********Scroll to top************/
+  #scroll {
+    position:fixed;
+    right:20px;
+    bottom:20px;
+    text-indent:-9999px;
+    display:none;
+}
+#scroll span {
+    position:absolute;
+    top:50%;
+    left:50%;
+    margin-left:-8px;
+    margin-top:-12px;
+    height:0;
+    width:0;
+    border:8px solid transparent;
+    border-bottom-color:#ffffff;
+}
+#scroll:hover {
+    background-color:#e74c3c;
+    opacity:1;filter:"alpha(opacity=100)";
+    -ms-filter:"alpha(opacity=100)";
+}
+
+  @media screen and (max-width: 670px){
+    header{
+      min-height: 500px;
+    }
+    header .quote{
+        position: absolute;
+        bottom:5px;
+        right:20px;
+    }
+    #scroll{
+        right:10px;
+    }
+  }

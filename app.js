@@ -1,5 +1,6 @@
 const express = require('express');
 const nodemailer =  require('nodemailer');
+require('dotenv').config();
 
 const app = express();
 app.listen(process.env.PORT||3000,()=>{
@@ -28,12 +29,12 @@ app.post('/email', ( req, res)=>{
     `;
 
     let transporter = nodemailer.createTransport({
-        host: 'smtp.ethereal.email',
+        host: 'smtp-mail.outlook.com',
         port: 587,
         secure: false, // true for 465, false for other ports
         auth: {
-            user: 'ignacio.beatty@ethereal.email', // generated ethereal user
-            pass: 'zSQDE1TackG4nBv5K3'  // generated ethereal password
+            user: 'ds10@outlook.in',
+            pass: `${process.env.MAIL_KEY}`
         },
         tls:{
           rejectUnauthorized:false
@@ -42,10 +43,10 @@ app.post('/email', ( req, res)=>{
     
       // setup email data with unicode symbols
       let mailOptions = {
-          from: '"Nodemailer Contact" ignacio.beatty@ethereal.email', // sender address
+          from: 'ds10@outlook.in', // sender address
           to: 'deepaksoni06@gmail.com', // list of receivers
           subject: 'Node Contact Request', // Subject line
-          text: 'New Mail', // plain text body
+          text: 'New Message', // plain text body
           html: mail // html body
       };
     

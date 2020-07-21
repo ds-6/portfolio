@@ -15,8 +15,8 @@
       <div class="navbar-fixed">
         <nav class='transparent'>
             <div class="nav-wrapper container">
-              <a href="https://deepaksoni.herokuapp.com" class="brand-logo">Deepak</a>
-              <a href="#" data-target="mobile-menu" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+              <a href="https://deepaksoni.herokuapp.com" class="brand-logo">Deepak</a>              
+              <a href="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons">menu</i></a>
               <ul id="nav-mobile" class="right hide-on-med-and-down">
                 <li><a href="#about">About</a></li>                
                 <li><a href="#skills">Skills</a></li>
@@ -26,15 +26,33 @@
                 <li ><a class="btn-floating btn-small transparent" href="https://www.facebook.com/deepaksoni06"><i class="fa fa-facebook-square" aria-hidden="true"></i></a></li>
               </ul>
             </div>
-          </nav>
-          <ul id="mobile-menu" class="sidenav white darken-3">
-            <li><a href="#about">About</a></li>                
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#services">Services</a></li>
-            <li><a href="#projects">Projects</a></li>                
-            <li><a href="#contact">Contact</a></li>
-          </ul>
-      </div>    
+          </nav>          
+      </div> 
+      
+      <ul id="slide-out" class="sidenav">
+        <li><div class="user-view">
+          <div class="background">
+            <img src="photos/cover.png">
+          </div>
+          <a href="#user"><img class="circle" src="photos/profile.jpg"></a>
+          <a href="#name"><span class="white-text name">Deepak Soni</span></a>
+          <a href="#email"><span class="white-text email">deepaksoni@outlook.in</span></a>
+        </div></li>
+        <li><a href="#about"><i class="material-icons">perm_contact_calender</i>About</a></li>
+        <li><a href="#skills"><i class="material-icons">code</i>Skills</a></li>
+        <li><a href="#services"><i class="material-icons">assignment</i>Services</a></li>
+        <li><a href="#projects"><i class="material-icons">assignment_turned_in</i>Projects</a></li>
+        <li><a href="#contact"><i class="material-icons">call</i>Contact</a></li>
+        <li><div class="divider"></div></li>
+        <div class="ico">
+          <a  href="https://www.facebook.com/deepaksoni06" class="btn-floating btn-small left-align grey darken-4"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
+          <a  href="https://twitter.com/hedonist_6" class="btn-floating btn-small center-align grey darken-4"><i class="fa fa-twitter-square" aria-hidden="true"></i></a>
+          <a  href="https://www.linkedin.com/in/deepaksoni10/" class="btn-floating btn-small center-align grey darken-4"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
+          <a  href="https://www.instagram.com/deepaksoni10/" class="btn-floating btn-small center-align grey darken-4"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+      </div>
+      </ul>
+      
+
           <p class="grey-text text-darken-6 flow-text quote">"Quality is not an act, It is a habit." - Aristotle</p>
     </header>
 
@@ -96,7 +114,7 @@
             <div class="col s12 l4 center-align">
                 <h5>Mongo DB</h5>
                 <div class="bar-wrapper">
-                  <img src="/photos/mongodb.jpg" alt="mongodb" width='60'>
+                  <img src="/photos/mongodb.png" alt="mongodb" width='60'>
                   <div id="mongodb"></div>
                 </div>
             </div>
@@ -270,7 +288,6 @@
                  yearRange: 1
             });
         });
-
 
         /********SKILLS Cicles**********/
         var html = new ProgressBar.Circle('#html', {

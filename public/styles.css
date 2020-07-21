@@ -16,7 +16,16 @@ nav.bg-color{
     background: #212121;
     color:#f3f3f3;
 }
-
+.sidenav li>a>i, .sidenav li>a>[class^="mdi-"], .sidenav li>a li>a>[class*="mdi-"], .sidenav li>a>i.material-icons{
+    margin:0 20px 0 0;
+}
+.sidenav .ico{
+    margin-top:40px;
+    text-align: center;
+}
+.sidenav>a{
+    padding:0;
+}
 .section{
     padding:2vw;
 }

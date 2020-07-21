@@ -23,8 +23,8 @@ nav.bg-color{
     margin-top:40px;
     text-align: center;
 }
-.sidenav>a{
-    padding:0;
+.sidenav .ico a{
+    margin-right: 8px !important;
 }
 .section{
     padding:2vw;

@@ -9,6 +9,9 @@ header .quote{
     bottom:20px;
     right:20px;
 }
+.brand-logo{
+    font-family: 'Aclonica', sans-serif;
+}
 nav.bg-color{
     background: #212121;
     color:#f3f3f3;

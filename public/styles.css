@@ -23,6 +23,16 @@ header .quote{
     background: transparent;
   }
 
+.bar-wrapper{
+    position: relative;
+    display:inline-block;
+}
+.bar-wrapper img{
+    position: absolute;
+    top:40px;
+    left:20px;
+}
+
   /***********Skill Circles***************/
   #html,#css,#javascript,#nodejs,#mongodb,#express {
     margin: 20px auto;

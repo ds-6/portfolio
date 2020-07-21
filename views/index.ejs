@@ -10,6 +10,7 @@
 </head>
 <body>
     <header>
+      <div class="navbar-fixed">
         <nav class='transparent'>
             <div class="nav-wrapper container">
               <a href="https://deepaksoni.herokuapp.com" class="brand-logo">Deepak</a>
@@ -30,6 +31,7 @@
             <li><a href="#projects">Projects</a></li>                
             <li><a href="#contact">Contact</a></li>
           </ul>
+      </div>    
           <p class="grey-text text-darken-6 flow-text quote">"Quality is not an act, It is a habit." - Aristotle</p>
     </header>
 
@@ -348,6 +350,25 @@
             return false; 
             }); 
         });
+
+
+        /****Change Nav color on scroll******/
+
+        let scrollpos = window.scrollY
+        const header = document.querySelector("header");
+        const nav = document.querySelector("nav");
+        const header_height = header.offsetHeight;
+
+        const addClass = () =>{ nav.classList.add("bg-color");nav.classList.remove('transparent');}
+        const removeClass = () =>{ nav.classList.remove("bg-color");nav.classList.add('transparent');}
+
+        window.addEventListener('scroll', function() { 
+            scrollpos = window.scrollY;
+            if (scrollpos >= header_height) { addClass();console.log('added') }
+            else { removeClass() }
+
+          console.log(scrollpos)
+        })
     </script>    
 </body>
 </html>

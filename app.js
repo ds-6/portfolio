@@ -37,7 +37,7 @@ app.post('/email', ( req, res)=>{
             pass: `${process.env.MAIL_KEY}`
         },
         tls:{
-            ciphers:'SSLv3'
+          rejectUnauthorized:false
         }
       });
     

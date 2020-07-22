@@ -1,3 +1,6 @@
+p{
+    color:#616161;
+}
 header{
     min-height: 1000px;
     background: #212121 url("photos/bg.jpg") no-repeat center;
@@ -28,6 +31,9 @@ nav.bg-color{
 }
 .section{
     padding:2vw;
+}
+#about h4{
+    font-style:italic;
 }
 .tabs .indicator,.tabs .tab a:hover, .tabs .tab a.active,.tabs .indicator{
     color: teal;
